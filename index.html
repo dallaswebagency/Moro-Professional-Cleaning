@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moro Professional Cleaning | Canmore, Alberta</title>
+<meta name="description" content="Moro Professional Cleaning, Canmore, Alberta. Deep cleaning, restaurant sanitation and Airbnb cleaning. Where Cleaning Meets Perfection.">
+<link rel="icon" href="images/moro-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d2633;
+  --deep:#0a3b4c;
+  --teal:#13809e;
+  --aqua:#56b7cc;
+  --lime:#a9c63d;
+  --lime-soft:#e4efbd;
+  --mist:#dfeaec;
+  --fog:#f3f6f2;
+  --white:#ffffff;
+  --line:rgba(13,38,51,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:var(--fog);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,92vw);margin:0 auto}
+.serif{font-family:'Instrument Serif',serif;font-weight:400}
+.display{font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;line-height:.95}
+
+/* ---------- header ---------- */
+.ribbon{background:var(--ink);color:#cfe1e5;font-size:.8rem;letter-spacing:.04em}
+.ribbon .wrap{display:flex;justify-content:space-between;align-items:center;padding:.55rem 0;gap:1rem}
+.ribbon b{color:var(--lime);font-weight:600}
+.ribbon a:hover{color:#fff}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(243,246,242,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.brand{display:flex;align-items:center;gap:.8rem}
+.brand img{width:54px;height:54px;border-radius:50%;box-shadow:0 0 0 3px #fff,0 0 0 4px var(--line)}
+.brand strong{display:block;font-family:'Bricolage Grotesque';font-size:1.25rem;letter-spacing:-.02em;line-height:1}
+.brand span{font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--teal);font-weight:700}
+nav ul{list-style:none;display:flex;gap:2rem;font-weight:600;font-size:.92rem}
+nav ul a{position:relative;padding:.3rem 0}
+nav ul a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--lime);transition:width .3s}
+nav ul a:hover::after{width:100%}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.5rem;border-radius:100px;font-weight:700;font-size:.95rem;transition:transform .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-lime{background:var(--lime);color:var(--ink)}
+.btn-lime:hover{background:#bcd955}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--teal)}
+.btn svg{width:18px;height:18px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--deep);color:#fff;overflow:hidden;padding:5.5rem 0 0}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 30%,rgba(86,183,204,.35),transparent 45%),radial-gradient(circle at 10% 90%,rgba(169,198,61,.18),transparent 40%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr 1fr;gap:3rem;align-items:center}
+.locale{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgba(255,255,255,.25);padding:.45rem 1rem .45rem .5rem;border-radius:100px;font-size:.85rem;font-weight:600;letter-spacing:.03em}
+.locale i{width:26px;height:26px;border-radius:50%;background:var(--lime);display:grid;place-items:center;color:var(--ink);font-style:normal}
+.hero h1{font-size:clamp(3.2rem,7.4vw,6.6rem);margin:1.6rem 0 1.4rem;font-weight:800}
+.hero h1 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--lime);letter-spacing:-.01em}
+.hero p.lead{font-size:1.12rem;max-width:30rem;color:#d4e6ea}
+.hero .actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.2rem;align-items:center}
+.hero .mail{font-weight:600;color:#fff;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:2px}
+.hero .mail:hover{border-color:var(--lime);color:var(--lime)}
+
+.porthole{position:relative;aspect-ratio:1;max-width:540px;justify-self:end;width:100%}
+.porthole .ring{position:absolute;inset:0;border-radius:50%;border:2px dashed rgba(169,198,61,.6);animation:spin 60s linear infinite}
+.porthole .photo{position:absolute;inset:7%;border-radius:50%;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.porthole .photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.bubble{position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.95),rgba(255,255,255,.25) 40%,rgba(86,183,204,.25) 70%);border:1px solid rgba(255,255,255,.5);animation:float 7s ease-in-out infinite}
+.b1{width:70px;height:70px;top:-2%;left:12%}
+.b2{width:38px;height:38px;bottom:16%;left:-4%;animation-delay:-2s}
+.b3{width:24px;height:24px;top:22%;right:-2%;animation-delay:-4s}
+.porthole .seal{position:absolute;right:2%;bottom:4%;width:132px;height:132px;border-radius:50%;background:#fff;padding:6px;box-shadow:0 14px 40px rgba(0,0,0,.3)}
+.porthole .seal img{border-radius:50%;width:100%;height:100%}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{50%{transform:translateY(-14px)}}
+
+.ridge{position:relative;display:block;width:100%;height:auto;margin-top:4rem}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--lime);color:var(--ink);overflow:hidden;white-space:nowrap;border-block:1px solid var(--ink)}
+.ticker .track{display:inline-flex;gap:3rem;padding:1.1rem 0;animation:tick 28s linear infinite;font-family:'Bricolage Grotesque';font-weight:600;font-size:1.35rem;letter-spacing:-.01em}
+.ticker span{display:inline-flex;align-items:center;gap:3rem}
+.ticker span::after{content:"";width:12px;height:12px;border-radius:50%;border:2px solid var(--ink)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- intro ---------- */
+.intro{padding:7.5rem 0 6rem}
+.intro .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem;align-items:start}
+.kicker{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--teal);display:flex;align-items:center;gap:.7rem}
+.kicker::before{content:"";width:28px;height:2px;background:var(--lime)}
+.intro h2{font-size:clamp(3rem,6vw,5.4rem);margin-top:1.2rem;font-weight:800;color:var(--deep)}
+.intro h2 em{font-family:'Instrument Serif';font-style:italic;font-weight:400;color:var(--teal)}
+.intro .stack{position:relative;margin-top:3rem}
+.intro .stack img{border-radius:24px;aspect-ratio:4/3;object-fit:cover;width:100%;position:relative;z-index:1}
+.intro .stack::before{content:"";position:absolute;inset:auto -18px -18px 18px;height:100%;border-radius:24px;background:var(--lime-soft);border:1px solid var(--lime)}
+.copy p{font-size:1.35rem;line-height:1.55;color:var(--ink)}
+.copy p + p{margin-top:1.6rem;font-size:1.08rem;color:#3d5560}
+.copy p.big{font-family:'Instrument Serif';font-size:clamp(2rem,3.4vw,2.9rem);line-height:1.15;color:var(--deep)}
+.copy p.big::first-letter{color:var(--teal)}
+.copy .tagline{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--line);display:flex;align-items:center;gap:1rem;font-weight:700}
+.copy .tagline img{width:46px;height:46px;border-radius:50%}
+
+/* ---------- services ---------- */
+.services{background:var(--ink);color:#fff;padding:7rem 0;position:relative;overflow:hidden}
+.services::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid rgba(255,255,255,.07);right:-160px;top:-160px;box-shadow:0 0 0 80px rgba(255,255,255,.015),0 0 0 160px rgba(255,255,255,.01)}
+.services .head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3.5rem}
+.services .kicker{color:var(--aqua)}
+.services h2{font-size:clamp(2.6rem,5vw,4.4rem);font-weight:800;margin-top:1rem;max-width:14ch}
+.services h2 em{font-family:'Instrument Serif';font-style:italic;font-weight:400;color:var(--lime)}
+.services .head p{max-width:24rem;color:#a9c3ca}
+.svc-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center;position:relative;z-index:1}
+.svc-list{list-style:none;border-top:1px solid rgba(255,255,255,.15)}
+.svc-list li{border-bottom:1px solid rgba(255,255,255,.15);cursor:pointer}
+.svc-list button{all:unset;display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:1rem;width:100%;padding:2rem 0;cursor:pointer}
+.svc-list .num{font-family:'Instrument Serif';font-style:italic;font-size:1.6rem;color:var(--aqua)}
+.svc-list h3{font-family:'Bricolage Grotesque';font-size:clamp(1.7rem,3vw,2.6rem);font-weight:600;letter-spacing:-.025em;line-height:1.05;transition:color .3s,transform .3s}
+.svc-list .arrow{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.3);display:grid;place-items:center;transition:all .3s}
+.svc-list .arrow svg{width:20px;transition:transform .3s}
+.svc-list .desc{max-height:0;overflow:hidden;transition:max-height .45s ease;padding-left:86px;color:#bcd2d8}
+.svc-list .desc p{padding-bottom:1.8rem;max-width:32rem}
+.svc-list li.on h3{color:var(--lime);transform:translateX(6px)}
+.svc-list li.on .arrow{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.svc-list li.on .arrow svg{transform:rotate(-45deg)}
+.svc-list li.on .desc{max-height:200px}
+.svc-view{position:relative;aspect-ratio:3/4;border-radius:140px 24px 140px 24px;overflow:hidden;background:var(--deep)}
+.svc-view img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .6s,transform 1.2s}
+.svc-view img.on{opacity:1;transform:scale(1)}
+.svc-view .label{position:absolute;left:1.2rem;bottom:1.2rem;z-index:2;background:rgba(13,38,51,.75);backdrop-filter:blur(8px);padding:.6rem 1rem;border-radius:100px;font-size:.85rem;font-weight:600}
+
+/* ---------- book ---------- */
+.book{padding:7rem 0}
+.letter{position:relative;background:var(--white);border-radius:32px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 40px 90px -40px rgba(13,38,51,.35);border:1px solid var(--line)}
+.letter .stamp-side{position:relative;min-height:520px;background:var(--mist)}
+.letter .stamp-side img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.letter .stamp{position:absolute;top:1.6rem;right:1.6rem;width:118px;height:140px;background:#fff;padding:9px;border-radius:6px;transform:rotate(4deg);box-shadow:0 12px 30px rgba(13,38,51,.25);outline:2px dashed #fff;outline-offset:4px}
+.letter .stamp div{width:100%;height:100%;background:var(--deep);display:grid;place-items:center;padding:10px}
+.letter .stamp img{border-radius:50%}
+.letter .post{position:absolute;left:1.6rem;bottom:1.6rem;width:150px;height:150px;border-radius:50%;border:2px solid #fff;color:#fff;display:grid;place-items:center;text-align:center;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;transform:rotate(-12deg);background:rgba(10,59,76,.35);backdrop-filter:blur(3px)}
+.letter .post b{display:block;font-family:'Instrument Serif';font-style:italic;font-weight:400;font-size:1.35rem;letter-spacing:0;text-transform:none}
+.letter .body{padding:4rem 3.6rem;display:flex;flex-direction:column;justify-content:center;background:repeating-linear-gradient(0deg,transparent 0 47px,rgba(19,128,158,.08) 47px 48px)}
+.letter h2{font-size:clamp(2.6rem,4.6vw,4rem);font-weight:800;color:var(--deep);margin:1rem 0 1.2rem}
+.letter h2 em{font-family:'Instrument Serif';font-style:italic;font-weight:400;color:var(--teal)}
+.letter .to{margin:1.6rem 0 2rem;padding:1.4rem 0;border-block:1px dashed var(--line)}
+.letter .to small{display:block;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:.3rem}
+.letter .to a{font-family:'Bricolage Grotesque';font-weight:600;font-size:clamp(1.2rem,2.2vw,1.65rem);word-break:break-all}
+.letter .to a:hover{color:var(--teal)}
+.letter .to div + div{margin-top:1rem}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#b8cdd3;padding:5rem 0 2rem;position:relative;overflow:hidden}
+footer .huge{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(4rem,14vw,12rem);letter-spacing:-.05em;line-height:.8;color:rgba(255,255,255,.05);white-space:nowrap;margin-top:3rem;user-select:none}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem}
+.foot .brand strong{color:#fff}
+.foot p{margin-top:1.2rem;max-width:22rem}
+.foot h4{color:#fff;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.1rem}
+.foot ul{list-style:none;display:grid;gap:.6rem}
+.foot a:hover{color:var(--lime)}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;border-top:1px solid rgba(255,255,255,.1);padding-top:1.6rem;font-size:.85rem}
+.legal a{color:var(--lime);font-weight:600}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  nav ul{display:none}
+  .hero .wrap,.intro .wrap,.svc-grid,.letter,.foot{grid-template-columns:1fr}
+  .porthole{justify-self:center;max-width:420px}
+  .intro .wrap{gap:3rem}
+  .services .head{flex-direction:column;align-items:start}
+  .svc-view{max-width:440px;width:100%;justify-self:center;order:-1}
+  .letter .stamp-side{min-height:340px}
+  .letter .body{padding:3rem 1.6rem}
+  .ribbon .hide-m{display:none}
+}
+@media (max-width:560px){
+  header.nav .btn{padding:.7rem 1rem;font-size:.85rem}
+  .brand strong{font-size:1.05rem}
+  .svc-list button{grid-template-columns:44px 1fr auto}
+  .svc-list .desc{padding-left:60px}
+  .porthole .seal{width:96px;height:96px}
+}
+</style>
+</head>
+<body>
+
+<div class="ribbon">
+  <div class="wrap">
+    <span>Canmore, Alberta &nbsp;·&nbsp; <b>Where Cleaning Meets Perfection.</b></span>
+    <a class="hide-m" href="mailto:morojourdain77@gmail.com">morojourdain77@gmail.com</a>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="images/moro-logo.png" alt="Moro Professional Cleaning logo">
+      <div><strong>Moro</strong><span>Professional Cleaning</span></div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-ink" href="mailto:morojourdain77@gmail.com">Book Now</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="locale"><i>●</i> Canmore, Alberta</span>
+      <h1 class="display">Where cleaning meets <em>perfection.</em></h1>
+      <p class="lead">Moro Professional Cleaning. Deep cleaning, restaurant sanitation and Airbnb cleaning, refreshing every space from top to bottom.</p>
+      <div class="actions">
+        <a class="btn btn-lime" href="mailto:morojourdain77@gmail.com">Book Now
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="mail" href="#services">Explore our services</a>
+      </div>
+    </div>
+    <div class="porthole">
+      <div class="ring"></div>
+      <div class="photo"><img src="images/living-room-fireplace.jpg" alt="Bright, freshly cleaned living room with fireplace"></div>
+      <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+      <div class="seal"><img src="images/moro-logo.png" alt="Moro Professional Cleaning"></div>
+    </div>
+  </div>
+  <!-- Rocky Mountain ridgeline -->
+  <svg class="ridge" viewBox="0 0 1440 170" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#0d4a5e" d="M0 120 L120 70 L190 98 L300 30 L400 92 L470 64 L560 110 L660 40 L740 80 L820 18 L930 96 L1010 60 L1100 104 L1190 44 L1280 88 L1360 58 L1440 96 V170 H0Z"/>
+    <path fill="#f3f6f2" d="M0 150 L140 112 L230 136 L340 92 L450 132 L560 104 L650 140 L760 100 L870 136 L980 110 L1080 142 L1200 104 L1320 134 L1440 116 V170 H0Z"/>
+    <path fill="none" stroke="#a9c63d" stroke-width="2" d="M300 30 L330 48 M820 18 L850 40 M1190 44 L1215 60"/>
+  </svg>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="track">
+    <span>Deep Cleaning</span><span>Restaurant Sanitation</span><span>Airbnb Cleaning</span><span>Canmore, Alberta</span><span>Fresh spaces start here</span>
+    <span>Deep Cleaning</span><span>Restaurant Sanitation</span><span>Airbnb Cleaning</span><span>Canmore, Alberta</span><span>Fresh spaces start here</span>
+  </div>
+</div>
+
+<section class="intro" id="about">
+  <div class="wrap">
+    <div class="rv">
+      <div class="kicker">About Moro</div>
+      <h2 class="display">Fresh spaces <em>start here.</em></h2>
+      <div class="stack"><img src="images/living-room-sectional.jpg" alt="Clean, organized living room with sectional sofa"></div>
+    </div>
+    <div class="copy rv">
+      <p class="big">At Moro Professional Cleaning, we believe that a fresh, organized space creates peace of mind.</p>
+      <p>Our skilled team provides comprehensive cleaning solutions, including deep cleaning, restaurant sanitation, and Airbnb cleaning refreshing every space from top to bottom.</p>
+      <div class="tagline"><img src="images/moro-logo.png" alt=""> Where Cleaning Meets Perfection.</div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <div class="kicker">Our services</div>
+        <h2 class="display">Every space, <em>top to bottom.</em></h2>
+      </div>
+      <p>Comprehensive cleaning solutions from our skilled team in Canmore, Alberta.</p>
+    </div>
+    <div class="svc-grid">
+      <ul class="svc-list rv" id="svcList">
+        <li class="on" data-i="0">
+          <button><span class="num">01</span><h3>Deep Cleaning</h3><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+          <div class="desc"><p>Comprehensive deep cleaning that refreshes every space from top to bottom.</p></div>
+        </li>
+        <li data-i="1">
+          <button><span class="num">02</span><h3>Restaurant Sanitation</h3><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+          <div class="desc"><p>Professional sanitation for restaurant spaces, so your kitchen and dining room stay fresh.</p></div>
+        </li>
+        <li data-i="2">
+          <button><span class="num">03</span><h3>Airbnb Cleaning</h3><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+          <div class="desc"><p>Airbnb cleaning that leaves your rental fresh and organized for every guest.</p></div>
+        </li>
+      </ul>
+      <div class="svc-view rv">
+        <img class="on" src="images/deep-cleaning.jpg" onerror="this.onerror=null;this.src='images/living-room-fireplace.jpg'" alt="Deep cleaning">
+        <img src="images/restaurant-sanitation.jpg" onerror="this.onerror=null;this.src='images/living-room-sectional.jpg'" alt="Restaurant sanitation">
+        <img src="images/airbnb-cleaning.jpg" onerror="this.onerror=null;this.src='images/living-room-fireplace.jpg'" alt="Airbnb cleaning">
+        <span class="label" id="svcLabel">01 · Deep Cleaning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="contact">
+  <div class="wrap">
+    <div class="letter rv">
+      <div class="stamp-side">
+        <img class="bg" src="images/canmore-clean-home.jpg" onerror="this.onerror=null;this.src='images/living-room-sectional.jpg'" alt="Fresh, clean home in Canmore">
+        <div class="stamp"><div><img src="images/moro-logo.png" alt=""></div></div>
+        <div class="post"><span>Canmore<b>Alberta</b>Booking</span></div>
+      </div>
+      <div class="body">
+        <div class="kicker">Contact</div>
+        <h2 class="display">Ready for a <em>fresh space?</em></h2>
+        <p>Send us a note to book your cleaning with Moro Professional Cleaning.</p>
+        <div class="to">
+          <div><small>Email</small><a href="mailto:morojourdain77@gmail.com">morojourdain77@gmail.com</a></div>
+          <div><small>Location</small><span style="font-family:'Bricolage Grotesque';font-weight:600;font-size:1.3rem">Canmore, Alberta</span></div>
+        </div>
+        <div><a class="btn btn-ink" href="mailto:morojourdain77@gmail.com">Book Now
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#top" class="brand"><img src="images/moro-logo.png" alt="Moro Professional Cleaning logo"><div><strong>Moro</strong><span style="color:var(--aqua)">Professional Cleaning</span></div></a>
+        <p>Where Cleaning Meets Perfection. Fresh spaces start here.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="#services">Deep Cleaning</a></li><li><a href="#services">Restaurant Sanitation</a></li><li><a href="#services">Airbnb Cleaning</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="mailto:morojourdain77@gmail.com">morojourdain77@gmail.com</a></li><li>Canmore, Alberta</li><li><a href="mailto:morojourdain77@gmail.com">Book Now</a></li></ul>
+      </div>
+    </div>
+    <div class="huge">Moro Professional</div>
+    <div class="legal">
+      <span>© <span id="yr">2026</span> Moro Professional Cleaning. All rights reserved.</span>
+      <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+// services switcher
+const items=[...document.querySelectorAll('#svcList li')],imgs=[...document.querySelectorAll('.svc-view img')],label=document.getElementById('svcLabel');
+items.forEach(li=>{
+  const go=()=>{const i=+li.dataset.i;items.forEach(x=>x.classList.toggle('on',x===li));imgs.forEach((im,k)=>im.classList.toggle('on',k===i));label.textContent=li.querySelector('.num').textContent+' · '+li.querySelector('h3').textContent;};
+  li.addEventListener('click',go);li.addEventListener('mouseenter',()=>{if(matchMedia('(hover:hover)').matches)go()});
+});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
